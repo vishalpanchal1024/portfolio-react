@@ -58,17 +58,17 @@ function App() {
       <div className="relative min-h-screen  flex-col items-center justify-center   bg-gradient-to-b from-[#020817] via-[#0f172a] to-emerald-900 ">
         <canvas
           ref={canvasRef}
-          className="absolute  inset-0   "
+          className="absolute  inset-0 "
           style={{ opacity: 0.9 }}
         />
         <Header />
 
         <aside
           id="default-sidebar"
-          className="relative  top-0 left-0  w-80 h-screen transition-transform -translate-x-full sm:translate-x-0  "
+          className="fixed top-0 left-0  w-80 h-screen transition-transform -translate-x-full sm:translate-x-0  overflow-y-hidden z-10"
           aria-label="Sidebar"
         >
-          <div className="h-full px-4 py-5   overflow-y-hidden ">
+          <div className="h-full px-4 py-5  ">
             <div
               className="
                          my-14
