@@ -55,32 +55,34 @@ function App() {
 
   return (
     <>
-      <div className="relative min-h-screen  flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#020817] via-[#0f172a] to-emerald-900">
+      <div className="relative min-h-screen  flex-col items-center justify-center   bg-gradient-to-b from-[#020817] via-[#0f172a] to-emerald-900 ">
         <canvas
           ref={canvasRef}
-          className="absolute inset-0"
+          className="absolute  inset-0   "
           style={{ opacity: 0.9 }}
         />
         <Header />
 
         <aside
           id="default-sidebar"
-          className="fixed  top-0 left-0 z-40 w-80 h-screen transition-transform -translate-x-full sm:translate-x-0 "
+          className="relative  top-0 left-0  w-80 h-screen transition-transform -translate-x-full sm:translate-x-0  "
           aria-label="Sidebar"
         >
-          <div className="h-full px-4 py-5 overflow-y-hidden   ">
+          <div className="h-full px-4 py-5   overflow-y-hidden ">
             <div
-              className="h-5/6 
-             my-14
-             px-2
-               bg-gray-50
-                bg-transparent
-                 bg-opacity-2 
-                 backdrop-blur-sm
-                  rounded-md 
-                   border-2 
-                   border-solid 
-                    border-gray-500  flex flex-col "
+              className="
+                         my-14
+                         px-2
+                       bg-gray-50
+                         bg-transparent
+                         bg-opacity-2 
+                         backdrop-blur-sm
+                         rounded-md 
+                         border-2 
+                         border-solid 
+                       border-gray-500
+                         flex
+                         flex-col "
             >
               <div className=" py-3 px-4">
                 <div className=" py-3 flex flex-row flex-wrap">
@@ -95,8 +97,10 @@ function App() {
                     <p className="text-sm text-gray-300 py-1 ">Rank :</p>
                   </div>
                 </div>
-                <div className="px-5 flex flex-row flex-wrap items-center  ">
-                  <p className="text-sm text-white    ">"about me"</p>
+                <div className="pl-2 flex flex-row flex-wrap items-center  ">
+                  <p className="text-sm text-white    ">
+                    "about me bvsviurvir ubvurbvrub lorem djkvb rijvburb"
+                  </p>
                 </div>
                 <div className="pt-5 flex flex-row flex-wrap items-center ">
                   <svg
@@ -151,18 +155,20 @@ function App() {
                     C++
                   </p>
                 </div>
-                <SocialMediaButtons />
+                <SocialMediaButtons layout="grid grid-cols-3 py-10" />
                 <PrimaryButton title={"RESUME DOWNLOAD"} />
               </div>
             </div>
           </div>
         </aside>
 
-        <div className="pl-16 pt-20 pb-10 pr-8  sm:ml-64">
-          <div className="pb-8  px-auto  rounded-lg  ">
+        <main className="h-full fixed top-0 left-0 right-0 pb-10  overflow-y-auto ">
+          <div className="pl-14 pt-20 pb-10 pr-8  sm:ml-64  ">
+            {/* <div className="pb-8  px-auto  rounded-lg  "> */}
             <Outlet />
           </div>
-        </div>
+        </main>
+
         <Footer />
       </div>
     </>
