@@ -4,11 +4,11 @@ function PrimaryButton({ title }) {
   return (
     <button className=" pr-8 my-8 rounded-2xl bg-transparent border-2 border-emerald-500 text-white hover:bg-emerald-500 transition-all duration-300 animate-glow ">
       <a
-        href="/assets/VishalsResume.pdf"
+        href="./public/assets/VishalsResume.pdf"
         download={"Vishal's Resume"}
         className="flex flex-row flex-wrap justify-center items-center"
       >
-        <p className="text-xs pl-8 pr-5 py-5">{title}</p>
+        <p className="text-xs font-medium pl-6 pr-5 py-5">{title}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
