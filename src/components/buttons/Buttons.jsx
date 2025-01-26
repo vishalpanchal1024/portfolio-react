@@ -4,7 +4,7 @@ function PrimaryButton({ title }) {
   return (
     <button className=" pr-8 my-8 rounded-2xl bg-transparent border-2 border-emerald-500 text-white hover:bg-emerald-500 transition-all duration-300 animate-glow ">
       <a
-        href="./public/assets/VishalsResume.pdf"
+        href="./assets/VishalsResume.pdf"
         download={"Vishal's Resume"}
         className="flex flex-row flex-wrap justify-center items-center"
       >

@@ -31,7 +31,7 @@ function Card({ title, description }) {
 			   
 				 "
       >
-        Github Url
+        Github
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -56,7 +56,7 @@ function Card({ title, description }) {
 			   hover:bg-gray-500
 			   "
       >
-        Live Url
+        Live
         <svg
           className="size-6 text-gray-100 fill-current pl-2"
           aria-hidden="true"
