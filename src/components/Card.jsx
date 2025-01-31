@@ -20,10 +20,10 @@ const languageColors = {
 
 function Card({ title, description, status, lang, github, live }) {
   return (
-    <div className="bg-gray-800 border border-gray-700 rounded-lg p-5 shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+    <div className="bg-transparent border border-gray-700 rounded-lg p-5 shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl  ">
       {/* Title & Status */}
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold text-white flex items-center">
+        <h3 className="lg:text-sm text-sm  font-semibold text-white flex items-center">
           <FaCode className="text-gray-400 mr-2" /> {title}
         </h3>
         <span
@@ -55,10 +55,10 @@ function Card({ title, description, status, lang, github, live }) {
       )}
 
       {/* Buttons */}
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 ">
         <a
           href={github}
-          className="flex items-center text-sm font-medium text-gray-300 hover:bg-gray-700 px-4 py-2 rounded-lg border border-gray-600 transition-all shadow-md hover:shadow-lg"
+          className="flex items-center text-sm font-medium text-gray-300 hover:bg-gray-700 px-4 py-2 rounded-lg border border-gray-600 transition-all shadow-md hover:shadow-lg animate-glow"
         >
           <FaGithub className="w-5 h-5 text-gray-300 mr-2" />
           GitHub

@@ -37,8 +37,8 @@ export default function Header() {
   ];
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#020817]/80 backdrop-blur-sm" : "bg-transparent"
+      className={`sticky w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-[#020817] backdrop-blur-sm" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
@@ -55,7 +55,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-white hover:text-emerald-400 transition-colors ${
+                className={`text-white hover:text-emerald-400 transition-colors [&.active]:bg-blue-400 ${
                   location.pathname === item.path ? "text-emerald-400" : ""
                 }`}
               >
