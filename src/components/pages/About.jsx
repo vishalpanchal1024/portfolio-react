@@ -12,13 +12,7 @@ export default function About() {
       <article className=" p-6 md:p-8 md:col-span-2">
         <div className="space-y-8">
           <p className="text-gray-200 sm:leading-relaxed md:text-2xl">
-            “Hi, I’m Vishal, a MERN stack developer with a passion for creating
-            modern and efficient web applications. I work with MongoDB,
-            Express.js, React, and Node.js to build user-friendly and scalable
-            solutions. I focus on clean code, practical design, and delivering
-            results that meet your needs. Whether it’s starting a project from
-            scratch or improving an existing one, I enjoy turning ideas into
-            functional and impactful websites.”
+            Hi, I’m Vishal, a MERN stack developer with over 1+ year of experience in building modern and efficient web applications. I work with MongoDB, Express.js, React, and Node.js to develop user-friendly and scalable solutions. I focus on clean code, practical design, and delivering results that align with your goals. Whether it’s starting a project from scratch or improving an existing one, I enjoy turning ideas into functional and impactful websites.
           </p>
 
           <footer className="flex items-center space-x-4 md:space-x-0">

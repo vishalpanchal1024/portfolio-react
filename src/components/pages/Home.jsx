@@ -14,18 +14,18 @@ const dataLineChart = [
 
 // Pie chart data for Leetcode question difficulty (Easy, Medium, Hard)
 const dataChart = [
-  { name: 'Easy', value: 120 },
-  { name: 'Medium', value: 75 },
-  { name: 'Hard', value: 30 },
+  { name: 'Easy', value: 167 },
+  { name: 'Medium', value: 35 },
+  { name: 'Hard', value: 0 },
 ];
 
 // Pie chart data for Leetcode problem-solving categories
 const dataPieChart = [
-  { name: 'Arrays', value: 40 },
-  { name: 'Dynamic Programming', value: 25 },
-  { name: 'Binary Search', value: 15 },
-  { name: 'Graph', value: 10 },
-  { name: 'Backtracking', value: 10 },
+  { name: 'Arrays', value: 121 },
+  { name: 'String', value: 71 },
+  { name: 'Binary Search', value: 22 },
+  { name: 'Hash Table', value: 52 },
+  { name: 'Sorting', value: 32 },
 ];
 
 // Define color palette for pie chart slices
@@ -38,15 +38,15 @@ const Home = () => {
       <section className=" rounded-2xl p-6 mb-10 shadow-lg flex flex-col items-center text-center space-y-4 animate-glow ">
 
         <div className='flex flex-row  gap-3'>
-          <div>
+          <div className='pt-6 lg:pt-0'>
             <img
               src="https://avatars.githubusercontent.com/u/106599132?v=4"
               alt="profile"
-              className="w-40 h-40 rounded-full object-cover border-4 border-gray-700"
+              className="lg:w-40 lg:h-40 w-25 h-20 rounded-full object-cover border-4 border-gray-700"
             />
           </div>
           <div className='pt-5 flex flex-col items-start'>
-            <h1 className="text-3xl font-bold">Vishal</h1>
+            <h1 className="lg:text-3xl text-sm font-bold">Vishal</h1>
             <p className="text-sm text-gray-300"> LeetCode Rank :<span className='font-extrabold pl-2 text-xs'>584,925</span> </p>
             <span className="flex items-center gap-2">
               Haryana, India
@@ -62,7 +62,7 @@ const Home = () => {
 
 
         <p className="text-gray-400 max-w-md italic">
-          "A passionate developer and problem solver, constantly learning and improving!"
+        "A passionate developer and problem solver with 1+ years of experience, constantly learning and improving!"
         </p>
         <PrimaryButton title={"Download Resume"} />
 
@@ -106,13 +106,13 @@ const Home = () => {
         <div className=" rounded-2xl p-6 shadow-md animate-glow ">
           <h2 className="text-xl font-bold text-center mb-4">Problem-Solving Categories</h2>
           <div className="h-60">
-            <ResponsiveContainer width="100%" height="120%">
+            <ResponsiveContainer width="100%" height="110%">
               <PieChart>
                 <Pie
                   data={dataPieChart}
                   dataKey="value"
                   nameKey="name"
-                  outerRadius={100}
+                  outerRadius={80}
                   label
                 >
                   {dataPieChart.map((entry, index) => (

@@ -50,7 +50,7 @@ export default function Header() {
             Portfolio
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          {/* <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((item) => (
               <Link
                 key={item.name}
@@ -62,7 +62,7 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-          </div>
+          </div> */}
 
           <button
             className="md:hidden text-white p-2 z-50 relative"
