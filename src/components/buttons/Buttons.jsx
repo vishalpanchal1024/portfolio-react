@@ -2,7 +2,7 @@ import React from "react";
 
 function PrimaryButton({ title }) {
   return (
-    <button className=" pr-8 my-8 rounded-2xl bg-transparent border-2 border-emerald-500 text-white hover:bg-emerald-500 transition-all duration-300 animate-glow ">
+    <button className=" z-10 pr-8 my-8 rounded-2xl bg-transparent border-2 border-emerald-500 text-white hover:bg-emerald-500 transition-all duration-300 animate-glow ">
       <a
         href="./assets/VishalsResume.pdf"
         download={"Vishal's Resume"}

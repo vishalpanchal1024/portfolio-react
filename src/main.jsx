@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import Home from "./components/screens/Home.jsx";
-import Project from "./components/screens/Project.jsx";
-import Skills from "./components/screens/Skills.jsx";
-import About from "./components/screens/About.jsx";
-import Contact from "./components/screens/Contact.jsx";
+import Home from "./components/pages/Home.jsx";
+import Project from "./components/pages/Project.jsx";
+import Skills from "./components/pages/Skills.jsx";
+import About from "./components/pages/About.jsx";
+import Contact from "./components/pages/Contact.jsx";
 import {
   Route,
   RouterProvider,
